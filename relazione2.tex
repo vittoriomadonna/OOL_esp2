@@ -10,10 +10,23 @@
 
 \section{Strumenti di misura e approccio sperimentale}
 
-In questa esperienza sono state misurate le posizioni degli elementi cardinali di un sistema ottico, nella fattispecie di una lente biconvessa, tramite l'utilizzo della legge dei punti coniugati [vero?] e di misure dell'ingrandimento trasversale.
-
-Per fare ciò è stato impiegato un banco ottico con [una riga imposta sul suo fianco] con tre cavalieri, su cui sono stati montati la lente da studiare, un oggetto di cui si vuole studiare l'immagine e uno schermo su cui quest'ultima veniva proiettata.
-L'oggetto era costituito da un [vetrino trasparente su cui era stampato un quadrato] e veniva illuminato tramite una sorgente LED posta dietro di esso.
+In questa esperienza sono state misurate le posizioni degli elementi cardinali di un sistema ottico, nella fattispecie di una lente biconvessa, sfruttando la relazione tra ingrandimento trasversale, posizioni dell'oggetto e dell'immagine e fuochi.
+L'apparato sperimentale utilizzato consiste di una sorgente luminosa e di un banco ottico a sezione triangolare, dotato di scala millimetrata e binari su cui si possono far scorrere tre cavalieri. Sul primo cavaliere, partendo dall'origine del banco ottico, è stato montato un oggetto di proiezione, mostrato in Figura[1]; sul cavaliere centrale è montata la lente di cui si vogliono studiare le proprietà ottiche; sull'ultimo cavaliere è montato uno schermo traslucido per rivelare l'immagine dell'oggetto prodotta dalla lente.
+Dette $x_1$ e $x_2$ le posizioni rispettivamente di primo e secondo piano principale della lente rispetto all'origine del banco ottico, dette $f_1$ ed $f_2$ le posizioni dei fuochi rispetto alle posizioni dei corrispondenti punti principali e dette $p$ e $q$ le posizioni dell'oggetto e della sua immagine sempre rispetto ai suddetti piani principali, l'ingrandimento lineare trasverso si può scrivere come:
+$G_Y=\frac{f_1}{p-f_1}=\frac{q-f_2}{f_2}$,
+ovvero, posto $p^*=x_1-p$ e $q^*=x_2+q$,
+$G_Y=\frac{q^*-x_2-f2}{f_2}$
+e
+$\frac{1}{G_Y}=\frac{x_1-f_1-p}{f_1}$.
+Le precedenti relazioni legano l'ingrandimento lineare trasverso e il suo reciproco rispettivamente alle posizioni di oggetto e immagine misurate rispetto all'origine del banco ottico e alle posizioni di piani principali e fuochi.
+Prima di eseguire le misure di $p^*$, $q^*$ e $G_Y$, ci si assicura che i centri dell'oggetto e della lente siano allineati e che i piani in cui essi giacciono siano paralleli. Innanzitutto, scelto come particolare dell'oggetto la diagonale orizzontale del quadrato interno, si misura con un regolo di sensibilità $1mm$, la dimensione di tale particolare, che risulta $Y=(\pm)cm$. Quindi si fissa una volta per tutte la posizione della lente e si misura, mediante la scala millimetrata, la posizione del bordo del suo cavaliere dalla parte dell'origine del banco ottico. Tale misura vale $x_{lente}=(\pm)cm$. Successivamente, si fissa la posizione dell'oggetto e si misura $p^*$, usando sempre la scala millimetrata e scegliendo come risultato della misura la lettura corrispondente al bordo del suo cavaliere dalla parte dell'origine del banco ottico. Con lo stesso procedimento, si misurano le posizioni $q^*_{min}$ e $q^*_{max}$ tra le quali l'immagine risulta a fuoco ed i valori $Y^'_{min}$ e $Y^'_{max}$ che assume la dimensione del particolare dell'immagine in corrispondenza di tali posizioni. Le misure di $q^*$ e $Y^'$ si ottengono, pertanto, come media aritmetica rispettivamente di $q^*_{min}$ e $q^*_{max}$ e di $Y^'_{min}$ e $Y^'_{max}$. Dunque otteniamo una misura dell'ingrandimento lineare trasverso in questa particolare configurazione, che per definizione è $G_Y = \frac{Y}{Y^'}$. Ripetendo tale procedimento, sono stati ottenuti i dati riportati in Tabella[1]. Le incertezze vengono trattate differentemente a seconda della misura:
+\begin{itemize}
+\item Per $p^*$ occorre considerare che l'oggetto non è esattamente al centro del cavaliere, lungo circa 5cm, pertanto è ragionevole associare un errore massimo di mezzo centimetro: $\Delta p^* = 0.5 cm$.
+\item Per $q^*$ e $Y^'$ si può associare come errore massimo la semiampiezza rispettivamente di $[q^*_{min},q^*_{max}]$ e di $[Y^'_{min},Y^'_{max}]$.
+\item Per $Y$ è sufficiente l'errore di sensibilità del regolo: $\Delta Y = 0.1 cm$.
+\item Per $G_Y$ e $1/G_Y$, dalla propagazione degli errori massimi, risultano: $\Delta G_Y = G_Y (\frac{\Delta Y}{Y}+\frac{\Delta Y^'}{Y^'})$ e
+$\Delta 1/G_Y = \frac{1}{G_Y} (\frac{\Delta Y}{Y}+\frac{\Delta Y^'}{Y^'})$.
+\end{itemize}
 
 [E' possibile ricavare la posizione relativa degli oggetti per differenza tra le posizioni del bordo sinistro dei rispettivi cavalieri, introducendo 0.5cm di incertezza. La posizione dell'immagine veniva ricavata spostando lo schermo per proiettarla nitidamente su di esso e misurando dunque la posizione di quest'ultimo. Con questo apparato, è possibile misurare anche la dimensione dell'immagine sullo schermo tramite un righello e ricavare l'ingrandimento trasversale della lente rapportandola alle dimensioni dell'oggetto.]
 
