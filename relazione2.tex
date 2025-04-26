@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\title{Relazione 2}
+
+\begin{document}
+	
+	\maketitle
+	
+	
+	
+	\section{Strumenti di misura e approccio sperimentale}
+	
+	In questa esperienza sono state misurate le posizioni degli elementi cardinali di un sistema ottico, nella fattispecie di una lente biconvessa, sfruttando la relazione tra ingrandimento trasversale, posizioni dell'oggetto e dell'immagine e fuochi.
+	
+	L'apparato sperimentale utilizzato consiste di una sorgente luminosa e di un banco ottico a sezione triangolare, dotato di scala millimetrata e binari su cui si possono far scorrere tre cavalieri. Sul primo cavaliere, partendo dall'origine del banco ottico, è stato montato un oggetto di proiezione, mostrato in Figura[1]; sul cavaliere centrale è montata la lente di cui si vogliono studiare le proprietà ottiche; sull'ultimo cavaliere è montato uno schermo traslucido per rivelare l'immagine dell'oggetto prodotta dalla lente.
+	
+	Dette $x_1$ e $x_2$ le posizioni rispettivamente di primo e secondo piano principale della lente rispetto all'origine del banco ottico, dette $f_1$ ed $f_2$ le posizioni dei fuochi rispetto alle posizioni dei corrispondenti punti principali e dette $p$ e $q$ le posizioni dell'oggetto e della sua immagine sempre rispetto ai suddetti piani principali, l'ingrandimento lineare trasverso si può scrivere come: 
+	$G_Y=\frac{f_1}{p-f_1}=\frac{q-f_2}{f_2}$,
+	ovvero, posto $p^*=x_1-p$ e $q^*=x_2+q$,
+	$G_Y=\frac{q^*-x_2-f2}{f_2}$
+	e
+	$\frac{1}{G_Y}=\frac{x_1-f_1-p}{f_1}$.
+	
+	Le precedenti relazioni legano l'ingrandimento lineare trasverso e il suo reciproco rispettivamente alle posizioni di oggetto e immagine misurate rispetto all'origine del banco ottico e alle posizioni di piani principali e fuochi.
+	
+	Prima di eseguire le misure di $p^*$, $q^*$ e $G_Y$, ci si assicura che i centri dell'oggetto e della lente siano allineati e che i piani in cui essi giacciono siano paralleli. Innanzitutto, scelto come particolare dell'oggetto la diagonale orizzontale del quadrato interno, si misura con un regolo di sensibilità $1mm$, la dimensione di tale particolare, che risulta $Y=(\pm)cm$. Quindi si fissa una volta per tutte la posizione della lente e si misura, mediante la scala millimetrata, la posizione del bordo del suo cavaliere dalla parte dell'origine del banco ottico. Tale misura vale $x_{lente}=(\pm)cm$. Successivamente, si fissa la posizione dell'oggetto e si misura $p^*$, usando sempre la scala millimetrata e scegliendo come risultato della misura la lettura corrispondente al bordo del suo cavaliere dalla parte dell'origine del banco ottico. Con lo stesso procedimento, si misurano le posizioni $q^*_{min}$ e $q^*_{max}$ tra le quali l'immagine risulta a fuoco ed i valori $Y'_{min}$ e $Y'_{max}$ che assume la dimensione del particolare dell'immagine in corrispondenza di tali posizioni. 
+	Le misure di $q^*$ e $Y'$ si ottengono, pertanto, come media aritmetica rispettivamente di $q^*_{min}$ e $q^*_{max}$ e di $Y'_{min}$ e $Y'_{max}$. Dunque otteniamo una misura dell'ingrandimento lineare trasverso in questa particolare configurazione, che per definizione è $G_Y = \frac{Y}{Y'}$. Ripetendo tale procedimento, sono stati ottenuti i dati riportati in Tabella[1]. Le incertezze vengono trattate differentemente a seconda della misura:
+	\begin{itemize}
+		\item Per $p^*$ occorre considerare che l'oggetto non è esattamente al centro del cavaliere, lungo circa 5cm, pertanto è ragionevole associare un errore massimo di mezzo centimetro: $\Delta p^* = 0.5 cm$.
+		\item Per $q^*$ e $Y'$ si può associare come errore massimo la semiampiezza rispettivamente di $[q^*_{min},q^*_{max}]$ e di $[Y'_{min},Y'_{max}]$.
+		\item Per $Y$ è sufficiente l'errore di sensibilità del regolo: $\Delta Y = 0.1 cm$.
+		\item Per $G_Y$ e $1/G_Y$, dalla propagazione degli errori massimi, risultano: $\Delta G_Y = G_Y (\frac{\Delta Y}{Y}+\frac{\Delta Y'}{Y'})$ e
+		$\Delta 1/G_Y = \frac{1}{G_Y} (\frac{\Delta Y}{Y}+\frac{\Delta Y'}{Y'})$.
+	\end{itemize}
+	Con i dati raccolti sono stati realizzati Grafico[1] e Grafico[2] che mostrano rispettivamente l'andamento di $1/G_Y$ in funzione di $p^*$ e l'andamento di $G_Y$ in funzione di $q^*$. Come predetto dalla teoria, si osserva che entrambi questi andamenti sono lineari. Pertanto è possibile eseguire un fit lineare per ciascun set di punti sperimentali, da cui stimare rispettivamente $f_1$ e $x_1$ ed $f_2$ e $x_2$.
+	Posto $1/G_Y = A_1 p^* + B_1$, si ottengono $f_1 = -\frac{1}{A_1}$ e $x_1 = \frac{B_1 + 1}{A_1}$, con i rispettivi errori $\sigma_{f_1} = \frac{\sigma_{A_1}}{{A_1}^2}$ e $$\sigma_{x_1}^2 = (-\frac{B_1+1}{{A_1}^2})^2 {\sigma_{A_1}}^2 + %termine A1
+	 {\frac{1}{A_1}}^2{\sigma_{B_1}}^2 + %termine B1
+	 2 (-\frac{B_1+1}{{A_1}^2}) (\frac{1}{A_1}) cov(A_1,B_1)$$. %termine covarianze
+	
+	Posto, invece, $G_Y = A_2 q^* + B_2$, si ottengono $f_2 = \frac{1}{A_2}$ e $x_2 = -\frac{B_2 + 1}{A_2}$, con i rispettivi errori $\sigma_{f_2} = \frac{\sigma_{A_2}}{{A_2}^2}$ e $$\sigma_{x_2}^2 = (\frac{B_2+1}{{A_2}^2})^2 {\sigma_{A_2}}^2 +  %termine A2
+	{-\frac{1}{A_2}}^2{\sigma_{B_2}}^2 +  %termine B2
+	2 (\frac{B_2+1}{{A_2}^2})(-\frac{1}{A_2})cov(A_2,B_2)$$. %termine covarianze
+	
+	Di seguito sono riportate le stime ottenute per i parametri di fit e per le posizioni di fuochi e piani principali.
+	...
+	Come si vede, risultano $f_1$ ed $f_2$ compatibili entro ... sigma ed $x_1$ e $x_2$ compatibili entro ... incertezze. Pertanto, vale l'approssimazione di lente sottile e le posizioni dei fuochi rispetto l'origine del banco ottico sono $f^*_1 = (\pm)cm$ ed $f^*_2 = (\pm)cm$.
+			
+			
+			
+	\section{conclusioni}
+			
+			
+			
+\end{document}
