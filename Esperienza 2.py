@@ -17,8 +17,12 @@ Delta_q_star = df['Delta_q*']
 Delta_p_star = 0.5
 
 plt.errorbar(x = p_star, y = invGy, xerr = Delta_p_star, yerr = Delta_invGy, fmt = 'None')
+plt.xlabel("p_star")
+plt.ylabel("1/Gy")
 plt.show()
-plt.errorbar(x = q_star, y = Gy, xerr = Delta_q_star, yerr = Delta_Gy, fmt = 'None')
+plt.errorbar(x = q_star, y = Gy,  yerr = Delta_Gy, fmt = 'None')
+plt.xlabel("q_star")
+plt.ylabel("Gy")
 plt.show()
 '''
 plt.xlabel('$p^* [cm]$')
